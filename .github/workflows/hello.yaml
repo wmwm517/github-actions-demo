@@ -16,5 +16,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: echo "Goodbye from ${COURSE}!"
-      - run: ls -al
-      
+      - run: echo "${{ secrets.MY_SECRET }}"
